@@ -1,6 +1,6 @@
 ## Blogging Website using Flask
 
-Created using Python Flask and SQLite for a Blogging website.
+Created using Python Flask and SQLite.
 
 ### Installation Requirements (libraries)
 
