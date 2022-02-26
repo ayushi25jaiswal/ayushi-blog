@@ -16,6 +16,6 @@ Created using Python Flask and SQLite.
 
 
 
-I have deployed my Blog app at heroku app which you can check out my blogs ❤️ at  - https://ayushi-blog.herokuapp.com/  
+I have deployed my Blog web app at heroku app, you can check out my blogs ❤️ at  - https://ayushi-blog.herokuapp.com/  
 
 
