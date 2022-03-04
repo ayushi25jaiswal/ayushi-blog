@@ -1,21 +1,17 @@
 {% include "header.html" %}
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('static/img/index.jpeg')">
+  <header class="masthead" style=" background-image: linear-gradient(#E5E3C9, #74959A, #495371, #98B4AA);">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading" >
+            <div class="typewriter" style="padding: 30px;"></div>
             <h1>Ayushi's Blog</h1>
-            <span class="typed-out" style="font-family: 'Kaushan Script', cursive; font-size:50px; font-weight:bold; color:#F0F5F9">technical  tales  with  Ayushi.</span>
+            <p  style="font-family: 'Kaushan Script', cursive; font-size:50px; font-weight:bold; color:#F0F5F9">technical  tales  with  Ayushi.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
+            <!-- Main Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -38,6 +34,16 @@
           </p>
         </div>
         {% endfor %}
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
 
 
         <!-- New Post -->
@@ -46,9 +52,7 @@
           <a class="btn btn-primary float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
         </div>
         {% endif %}
-      </div>
-    </div>
-  </div>
+  
   <hr>
 
 {% include "footer.html" %}
