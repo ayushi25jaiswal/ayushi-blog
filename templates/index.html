@@ -7,16 +7,17 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading" >
-            <div class="typewriter" style="padding: 30px;"></div>
+            <div class="typewriter" style="padding: 30px;">
             <h1>Ayushi's Blog</h1>
-            <p  style="font-family: 'Kaushan Script', cursive; font-size:50px; font-weight:bold; color:#F0F5F9">technical  tales  with  Ayushi.</p>
+            <p  style="font-family: 'Kaushan Script', cursive;">technical  tales  with  Ayushi.</p>
+              </div>
           </div>
             <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto" >
         {% for post in all_posts %}
-        <div class="post-preview"  style="outline-style: solid; outline: 2px solid black;padding: 10px;margin-bottom: 50px; ">
+        <div class="post-preview"  style="background-color:white;outline-style: solid; outline: 2px solid black;padding: 10px;margin-bottom: 50px; ">
           <a href="{{ url_for('show_post', post_id=post.id) }}">
             <h2 class="post-title">
               {{post.title}}
