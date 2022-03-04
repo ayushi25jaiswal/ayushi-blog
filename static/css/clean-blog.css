@@ -504,5 +504,5 @@ footer .copyright {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #085E7D; }
+  50% { border-color: ; }
 }
