@@ -9,40 +9,41 @@
           <div class="site-heading" >
             <div class="typewriter" style="padding: 30px;">
             <h1>Ayushi's Blog</h1>
-            <p  style="font-family: 'Kaushan Script', cursive;">technical  tales  with  Ayushi.</p>
+            <p  style="font-family: 'Kaushan Script', cursive; font-size: 30px;">technical  tales  with  Ayushi.</p>
               </div>
           </div>
-            <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto" >
-        {% for post in all_posts %}
-        <div class="post-preview"  style="background-color:white;outline-style: solid; outline: 2px solid black;padding: 10px;margin-bottom: 50px; ">
-          <a href="{{ url_for('show_post', post_id=post.id) }}">
-            <h2 class="post-title">
-              {{post.title}}
-            </h2>
-            <h3 class="post-subtitle">
-              {{post.subtitle}}
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            {{post.author.name}}
-            on {{post.date}}
-            {% if current_user.id == 1: %}
-            <a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
-            {% endif %}
-          </p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+
           </div>
         </div>
       </div>
     </div>
   </header>
+
+              <!-- Main Content -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 col-md-10 mx-auto" >
+                    {% for post in all_posts %}
+                    <div class="post-preview"  style="background-image:url('{{post.img_url}}'); background-color:black; outline-style: solid; outline: 2px solid black;padding: 50px;margin-bottom: 50px; " >
+                      <a href="{{ url_for('show_post', post_id=post.id) }}">
+                        <h2 class="post-title">
+                          {{post.title}}
+                        </h2>
+                        <h3 class="post-subtitle">
+                          {{post.subtitle}}
+                        </h3>
+                      </a>
+                      <p class="post-meta">Posted 
+                        on {{post.date}}
+                        {% if current_user.id == 1: %}
+                        <a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+                        {% endif %}
+                      </p>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
 
 
 
